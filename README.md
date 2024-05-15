@@ -36,18 +36,10 @@
 
 ## Quickstart
 
-```
+```bash
 git clone https://github.com/Mr-Saade/Hardhat-Nft
 cd Hardhat-Nft
 yarn
-```
-
-## Typescript
-
-If you want to get to typescript and you cloned the javascript version, just run:
-
-```
-git checkout typescript
 ```
 
 ## Usage
@@ -58,13 +50,13 @@ git checkout typescript
 2. Deploy the contract to the desired network:
    To deploy all contracts, using the following command:
 
-```sh
+```bash
 yarn hardhat deploy --network yourNetwork
 ```
 
 To deploy specific contracts example dynamicSvgNft contract using the following command:
 
-```sh
+```bash
 yarn hardhat deploy --network yourNetork --tags dynamic
 ```
 
@@ -72,7 +64,7 @@ yarn hardhat deploy --network yourNetork --tags dynamic
 
 Run tests for all contracts;
 
-```sh
+```bash
 yarn test --parallel
 ```
 
@@ -80,7 +72,7 @@ yarn test --parallel
 
 Generate a test coverage report:
 
-```sh
+```bash
 yarn coverage
 ```
 
@@ -116,7 +108,7 @@ Go back to [vrf.chain.link](https://vrf.chain.link) and under your subscription 
 
 To programatically mint NFTs from all 3 NFT Contracts, run:
 
-```sh
+```bash
 yarn hardhat run scripts/mintNfts
 ```
 
@@ -128,7 +120,7 @@ For a USD estimation of gas cost, set up `COINMARKETCAP_API_KEY` environment var
 
 To verify the contract on Etherscan manually, set up `ETHERSCAN_API_KEY` environment variable (see [Environment Variables](#environment-variables)). Use the following command:
 
-```sh
+```bash
 yarn hardhat verify --constructor-args  DEPLOYED_CONTRACT_ADDRESS
 ```
 
@@ -136,7 +128,7 @@ yarn hardhat verify --constructor-args  DEPLOYED_CONTRACT_ADDRESS
 
 Check and fix contract source code using the following commands:
 
-```sh
+```bash
 yarn lint
 yarn lint:fix
 ```
