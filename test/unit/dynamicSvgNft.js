@@ -17,7 +17,7 @@ const lowTokenUri =
       let dynamicNft, deployer, mockV3, highValue;
 
       beforeEach(async () => {
-        accounts = await ethers.getSigners();
+        const accounts = await ethers.getSigners();
         deployer = accounts[0];
         highValue = 1000e8;
         await deployments.fixture(["mockV3", "dynamic"]);
